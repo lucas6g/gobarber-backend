@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-    GoBarber Mobile
+    GoBarber Backend
 </h1>
 
 <h3 align="center">
