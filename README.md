@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="300" align="center" src=".github/gostack.svg">   
+    <img width="300" align="center" src="https://camo.githubusercontent.com/16835b1a5f23e90f29511dda2b27f599216ff2db217e2ae9bda1906b6ae2fc02/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a4158704f706242507438464a43444e6a79524f6878412e706e67">   
 </p>
 
 <h1 align="center">
