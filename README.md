@@ -24,14 +24,15 @@ e para barbeiros, permite gerenciar os horários marcados.</p>
 
 <p>Este é o repositório da API do projeto.</p>
 <ul>
-  <li>Para a versão web, <a href="">clique aqui</a>.</li>
-  <li>Para a versão mobile, <a href="https://github.com/nathaliacristina20/gostack-gobarber-mobile">aqui</a>.</li>
+  <li>Para a versão web, <a href="https://github.com/lucas6g/gobarber-web">clique aqui</a>.</li>
+  <li>Para a versão mobile, <a href="https://github.com/lucas6g/gobarber-mobile">aqui</a>.</li>
 </ul>
 
 ## :computer: Tecnologias
 
 Além das tecnologias abaixo, esta aplicação foi desenvolvida com as melhores práticas de desenvolvimento! 
-<p>:heart_eyes: <strong>TDD</strong> :sparkling_heart: Design patterns: <strong>SOLID</strong>, <strong>DDD</strong> e <strong>DRY</strong>, :balance_scale: estratégia de <strong>cache</strong> e :police_car: <strong>segurança</strong> no node.</p>
+
+
     
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
@@ -73,17 +74,13 @@ Além das tecnologias abaixo, esta aplicação foi desenvolvida com as melhores 
 - Clone o repositório ```git clone https://github.com/nathaliacristina20/gostack-gobarber-server.git```
 - Vá até o diretório ```cd gostack-gobarber-server```
 - Execute ```yarn``` para instalar as dependências
-- Copie o arquivo .env.example executando ```cp .env.example .env``` para linux ou mac e ```copy .env.example .env``` para windows
-- Abra o arquivo .env e preencha com suas variáveis de ambiente
+- Crie um arquivo .env e preencha com suas variáveis de ambiente
 - Copie o arquivo de configuração do orm executando ```cp ormconfig.example.json ormconfig.json``` para linux ou mac e ```copy ormconfig.example.json ormconfig.json``` para windows
 - Abra o arquivo ormconfig.json e preencha com suas credenciais das instâncias dos bancos de dados
 - Execute ```yarn typeorm migration:run``` para rodar as migrations 
 - Execute ```yarn dev:server``` para rodar o servidor
 
 Você pode realizar requisições REST através do Insomnia
-
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=GoBarber&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fnathaliacristina20%2Fgostack-gobarber-server%2Fmaster%2Finsomnia.json)
-
 Caso deseje executar os testes unitários e de integração basta executar ```yarn test``` em seu terminal. Você poderá ver um relatório da cobertura acessando o arquivo ```coverage/lcov-report/index.html```.
 
 
