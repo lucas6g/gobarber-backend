@@ -1,74 +1,89 @@
 <p align="center">
-    <img width="300" align="center" src="https://miro.medium.com/max/1400/1*AXpOpbBPt8FJCDNjyROhxA.png">
+    <img width="300" align="center" src=".github/gostack.svg">   
 </p>
 
 <h1 align="center">
-    GoBarber Backend
+   GoBarber Backend
 </h1>
 
 <h3 align="center">
 Plataforma de agendamento e gerenciamento para barbearias
 </h3>
 
-# Recuperação de senha
+<p align="center">
+  <a href="#rocket-sobre-o-projeto">Sobre o projeto</a> | <a href="#computer-tecnologias">Tecnologias</a> | <a href="#books-guia-de-instalação-e-execução">Guia de instalação e execução</a> 
+</p>
 
-**Requisito funcinal**
--O usuario deve poder recuperar sua senha informando seu email
--O usuario deve poder receber um email com instruções de recuperação de senha
--Usuario deve poder resetar sua senha
+<img src="https://user-images.githubusercontent.com/49662901/81240473-e8881c00-8fdd-11ea-9d47-740980f0eb6c.png">
 
-**Regra de negocio**
--O link enviado por email deve ser valido por apenas 2h
--O usuario deve confirmar a senha antes de alterala
 
-**Requisito não funcional**
--Usar mailTrap para testar envio de email em ambiemte de desemvolvimento
--Amazom ses para envio de emails em produção
--O envio de email deve ser feito em segundo plano
+## :rocket: Sobre o projeto
 
-# Atualização do perfil
+<p>Esta é uma plataforma completa onde o cliente pode visualizar a agenda de barbeiros e agendar um horário, 
+e para barbeiros, permite gerenciar os horários marcados.</p> 
 
-**Requisito funcinal**
--O usuario deve poder atualizar seu perfil
+<p>Este é o repositório da API do projeto.</p>
+<ul>
+  <li>Para a versão web, <a href="">clique aqui</a>.</li>
+  <li>Para a versão mobile, <a href="https://github.com/nathaliacristina20/gostack-gobarber-mobile">aqui</a>.</li>
+</ul>
 
-**Regra de negocio**
--O usuario nao pode alterar seu email para um email ja utilizado
--Para atualizar a senha o usuario deve informar a senha antiga
--Para atualizar a senha o usuario deve confirmar a nova senha
+## :computer: Tecnologias
 
-**Requisito não funcional**
+Além das tecnologias abaixo, esta aplicação foi desenvolvida com as melhores práticas de desenvolvimento! 
+<p>:heart_eyes: <strong>TDD</strong> :sparkling_heart: Design patterns: <strong>SOLID</strong>, <strong>DDD</strong> e <strong>DRY</strong>, :balance_scale: estratégia de <strong>cache</strong> e :police_car: <strong>segurança</strong> no node.</p>
+    
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/pt-br/)
+- [Typescript](https://www.typescriptlang.org/)
+- [ESLint-Airbnb](https://eslint.org/), [Prettier](https://prettier.io/) e [EditorConfig](https://editorconfig.org/)
+- [Celebrate](https://github.com/arb/celebrate)
+- [Jest](https://jestjs.io/) 
+- [Multer](https://github.com/expressjs/multer)
+- [Datefns](https://date-fns.org/)
+- [Dotenv](https://github.com/motdotla/dotenv)
+- [Bcrypt.js](https://github.com/dcodeIO/bcrypt.js/)
+- [Jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+- [TypeORM](https://typeorm.io/#/)
+- [Handlebars](https://handlebarsjs.com/)
+- [Nodemailer](https://nodemailer.com/about/)
+- [Ioredis](https://github.com/luin/ioredis)
+- [Cors](https://github.com/expressjs/cors)
+- [Aws-sdk](https://github.com/aws/aws-sdk-js)
+- [Class-transformer](https://github.com/typestack/class-transformer)
+- [Rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible)
+- [Tsyringe](https://github.com/microsoft/tsyringe)
+- [Uuidv4](https://github.com/thenativeweb/uuidv4)
 
-# Painel do prestador
+## :books: Guia de instalação e execução
 
--para o usuario que é prestador
-**Requisito funcinal**
--O usuario deve poder listar seus agendamentos de um dia especifico
--O prestador deve poder receber uma notificacao sempre quando alguem agendar com ele
--O prestador deve poder visualizar as notificaçoes nao lidas
+### Pré-requisitos
 
-**Regra de negocio**
--A notificacao deve ter um status de lida ou nao lida
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/) v10.20 ou maior
+- [Yarn](https://yarnpkg.com/)
+- Uma instância de [PostgreSQL](https://www.postgresql.org/), [Mongodb](https://www.mongodb.com/) e [Redis](https://redis.io/) **
 
-**Requisito não funcional**
--Os agendamentos do prestador no dia devem ser armazenadas em cache
--As notifications devem ser armazenadas no banco mongoDb
--As notificatosn devem ser enviadas em tempo real utilizando socke io
+** Ou [Docker](https://www.docker.com/) 
 
-# Agendamento de serviços
+### Como executar
 
---para o usuario que nao é prestador
-**Requisito funcinal**
--O usuario deve poder listar todos os prestadores de serviço
--O usuario deve poder listar os dias de um mes com pelo menos um horario disponivel de um prestador
--O usuario de deve poder listar horarios disponiveeis em um dia especifico de um prestador
--o usuario deve poder realizar um agendamento com um prestador
+<i>Antes de executar estes passos, você precisa ter uma instância dos bancos listados acima ou um Docker com as imagens e os databases e schemas criados.</i>
 
-**Regra de negocio**
--Cada agendamento deve durar uma hora
--Os agendamentos devem estar disponiveis das 8 as 18
--O usuario nao pode agendar em um horario que ja foi agendado por outro usuario
--O usuario nao pode agendar fora do periodo de agendamento
--O usuario nao pode agendar serviços sendo prestador com sigo mesmo
+- Clone o repositório ```git clone https://github.com/nathaliacristina20/gostack-gobarber-server.git```
+- Vá até o diretório ```cd gostack-gobarber-server```
+- Execute ```yarn``` para instalar as dependências
+- Copie o arquivo .env.example executando ```cp .env.example .env``` para linux ou mac e ```copy .env.example .env``` para windows
+- Abra o arquivo .env e preencha com suas variáveis de ambiente
+- Copie o arquivo de configuração do orm executando ```cp ormconfig.example.json ormconfig.json``` para linux ou mac e ```copy ormconfig.example.json ormconfig.json``` para windows
+- Abra o arquivo ormconfig.json e preencha com suas credenciais das instâncias dos bancos de dados
+- Execute ```yarn typeorm migration:run``` para rodar as migrations 
+- Execute ```yarn dev:server``` para rodar o servidor
 
-**Requisito não funcional**
--A listagem de prestadores deve ser listada em cache sem precisar buscar denovo do nosso banco de dados
+Você pode realizar requisições REST através do Insomnia
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=GoBarber&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fnathaliacristina20%2Fgostack-gobarber-server%2Fmaster%2Finsomnia.json)
+
+Caso deseje executar os testes unitários e de integração basta executar ```yarn test``` em seu terminal. Você poderá ver um relatório da cobertura acessando o arquivo ```coverage/lcov-report/index.html```.
+
+
