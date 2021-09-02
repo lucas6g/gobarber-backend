@@ -71,7 +71,7 @@ Além das tecnologias abaixo, esta aplicação foi desenvolvida com as melhores 
 
 <i>Antes de executar estes passos, você precisa ter uma instância dos bancos listados acima ou um Docker com as imagens e os databases e schemas criados.</i>
 
-- Clone o repositório ```git clone https://github.com/nathaliacristina20/gostack-gobarber-server.git```
+- Clone o repositório ```git clone https://github.com/lucas6g/gobarber-backend.git```
 - Vá até o diretório ```cd gostack-gobarber-server```
 - Execute ```yarn``` para instalar as dependências
 - Crie um arquivo .env e preencha com suas variáveis de ambiente
