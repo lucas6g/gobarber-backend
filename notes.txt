@@ -1,0 +1,29 @@
+1 instalar o typescript -D
+2 instalar o express e os tipos
+3 dar o comando yarn tsc --init para configurar o typescript
+4 instalar o ts-node-dev -D
+5 configurar o arquivo de config ts
+6 configurar o ts node dev
+7 configurar o editor config para padronizar o codigo
+8 configurar o eslint
+9 yarn add eslint -D
+10 yarn eslint --init
+11 escolher o padrao de codigo airbnb
+12 apos responder todas as perguntas instalar yarn add @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest  eslint-plugin-import@^2.22.1 @typescript-eslint/parser@latest -D
+13 resolver o problema dos imports no eslint
+14 instalar o plugin do eslint yarn add eslint-import-resolver-typescript -D
+15 instalar o prettier
+16 yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+17 configurar o eslint com prettier  no eslint.config
+18 criar um arquivo de config do prettier para nao conflitar com o eslint
+19 criar um eslint ignore para que o eslint não tente padronizar o prettier
+20 configurar o type orm
+21 criar um arquivo na raiz escrito ormconfig para conexao com o banco
+22 yarn add typeorm pg e o driver nativo do banco de dados
+23 o typeorm tem uma cli para ezecutar comandos de migrations
+24 criar um script para configurar o type orm para entender arquivos ts
+25 criar a migration com o comando yarn typeorm migration:create -n nome_da_migration
+26 comando para executar as migrations yarn typeorm migration:run
+27 ativar os decorators no js para relacionar os models da aplication com as tabelas no banco
+28 apos criar o relacionamento com as tabelas criar os relacionamentos com os models tambem
+29 instalar o celebrate para a validação na api
