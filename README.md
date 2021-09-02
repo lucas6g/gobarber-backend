@@ -1,3 +1,15 @@
+<p align="center">
+    <img width="300" align="center" src="https://miro.medium.com/max/1400/1*AXpOpbBPt8FJCDNjyROhxA.png">
+</p>
+
+<h1 align="center">
+    GoBarber Mobile
+</h1>
+
+<h3 align="center">
+Plataforma de agendamento e gerenciamento para barbearias
+</h3>
+
 # Recuperação de senha
 
 **Requisito funcinal**
